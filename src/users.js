@@ -30,11 +30,11 @@ const getUser (id) {
 
 // Promise 
 
-const getUser = (id) => {
+const getUser = async (id) => {
   return new Promise((resolve, reject) => {
     console.log(`Verificando id: ${id} de usuario`);
     setTimeout(() =>{
-      const user= users.find((user) => user.id === id);;
+      const user= users.find((user) => user.id === id);
       console.log(`Verificación id: ${id} de usuario terminada`);
       if(user){
       resolve(user);

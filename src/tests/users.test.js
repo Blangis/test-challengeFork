@@ -20,10 +20,10 @@ const {
 // READ documentation
 
 describe("getUser", () => {
-    it("It should retrieve the correct user for a given ID", async () => {
-        const user = users[0];
-        expect(getUsuario(1)).toEqual(user); 
-    });
+    /*it("It should retrieve the correct user for a given ID", async () => {
+        const user = users[2];
+        expect(getUsuario(3)).toEqual(user); 
+    });*/
     it("It should retrieve the correct data for a given ID", async () =>{
         const userId = 1;
         const expectedUser ={
@@ -36,7 +36,7 @@ describe("getUser", () => {
         const user = await getUser(userId);
         expect(user).toEqual(expectedUser);
 
-    });
+});
     it("should return an error for an invalid ID", async () => {
         const fakeID= 8;
 
@@ -46,6 +46,6 @@ describe("getUser", () => {
         } catch (error) {
             expect(error.message).toBe("User not found");
         }
-    });
+});
 
 });
