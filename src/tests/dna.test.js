@@ -6,8 +6,10 @@ The function should be case-sensitive. Only accept uppercase bases.
 Return empty string for invalid or empty inputs.
 Return true if the string is a valid DNA sequence.
 */
-
-const isValidDNA = require('./isValidDNA');
+const expect = require("expect").default;
+const {
+  isValidDNA
+} = require('../dna.js');
 
 describe('isValidDNA', () => {
   it(" It should return true for valid DNA sequences", () => {

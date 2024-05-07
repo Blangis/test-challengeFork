@@ -16,4 +16,5 @@ function factorial(n){
         }
     };
 
+    module.exports = {factorial}
    //console.log(factorial(5));
