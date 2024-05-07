@@ -4,6 +4,7 @@
 Ensure it handles edge cases: negative numbers or non-integer inputs.
  */
 
+// Error: It must be a callback fuction
 function factorial(n){
     if (n === 0 || n === 1){
        return 1;
